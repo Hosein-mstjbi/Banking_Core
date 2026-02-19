@@ -27,7 +27,7 @@ public class SavingsAccount extends Account {
             throw new BankingException("Invalid withdraw amount");
         }
 
-        if (amount < balance) {
+        if (balance < amount) {
             throw new BankingException("Insufficient balance");
         }
 
